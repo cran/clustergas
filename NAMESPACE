@@ -1,0 +1,43 @@
+# Export all names
+# exportPattern(".")
+#export(test)
+
+# import all names of package "cluster"
+#import(cluster)
+#importFrom(cluster, agnes, twins, twins.object, agnes.object)
+
+# Export the following functions
+export(H.ave,
+S.ave,
+a.rand.index2,
+ag.coef.mean1,
+ag.coef.sigma,
+ag.coef1,
+agnes.gas,
+clustering.dendo,
+clustering.fitness,
+complete.tree,
+degree.similarity,
+dendrogram.graph,
+evol.cluster,
+exec.strag,
+fitness.mean,
+fitness.mean.silhouette,
+fitness.meanC.HS,
+fitness.meanD.HS,
+improve.dendo,
+init.variables,
+jacard.coef,
+local.search,
+minkowski,
+missvalue.knn,
+rand.index,
+sigma.clust.HS,
+sigma.clust.fitness,
+sigma.dendo.fitness1,
+sigma.meanD.HS,
+silhouette.clust,
+silhouette.mean,
+standard,
+transf.tree,
+transftovector)

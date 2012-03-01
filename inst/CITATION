@@ -1,0 +1,24 @@
+## -*- R -*-
+citHeader("To cite the R package 'clustergas' in publications use:")
+
+if(!exists("meta") || is.null(meta)) meta <- packageDescription("clustergas")
+year <- sub(".*(2[[:digit:]]{3})-.*", "\\1", meta$Date)
+vers <- paste("R package version", meta$Version)
+
+citEntry(entry	= "Manual",
+	 title	= "clustergas: A hierarchical clustering method based on genetic algorithms",
+	 author = c(
+         person("Jose A.", "Castellanos-Garzon", email="jantonio_cu@ieee.org",
+                role = c("aut", "cre")),
+                #comment = "enhancements, speed improvements, bug fixes, since 2000"),
+         person("Fernando", "Diaz", email="fdiaz@infor.uva.es", role="aut")
+              ),
+   organization = "Department of Computer Science, University of Valladolid",
+   address = "Valladolid, Spain",
+	 year = year,
+	 note = "R package version 1.0",
+	 textVersion = paste(
+	 "Castellanos-Garzon, J. A., Diaz, F.(", year, 
+   "). clustergas: A hierarchical clustering method based on genetic algorithms. ",
+	 "Department of Computer Science, University of Valladolid, Spain. ", 
+   vers, ".", sep=""))
